@@ -17,7 +17,7 @@ export function HeroSection() {
           transition={{ duration: 0.7 }}
         >
           <Pill>Available for internships and graduate roles</Pill>
-          <h1 className="mt-7 max-w-4xl text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-7 max-w-4xl font-heading text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
             {personalInfo.name}
             <span className="mt-4 block bg-gradient-to-r from-sky-300 via-cyan-200 to-violet-400 bg-clip-text text-transparent">
               {personalInfo.role}
@@ -38,7 +38,7 @@ export function HeroSection() {
           <div className="mt-12 grid gap-4 sm:grid-cols-3">
             {stats.map((stat) => (
               <div key={stat.label} className="glass-panel neon-ring rounded-2xl p-5">
-                <p className="text-3xl font-semibold text-white">{stat.value}</p>
+                <p className="font-heading text-3xl font-semibold text-white">{stat.value}</p>
                 <p className="mt-2 text-sm text-slate-300">{stat.label}</p>
               </div>
             ))}
@@ -55,10 +55,10 @@ export function HeroSection() {
           <div className="glass-panel neon-ring relative overflow-hidden rounded-[32px] p-6 sm:p-8">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">
+                <p className="font-mono text-sm uppercase tracking-[0.28em] text-cyan-300/80">
                   AI Signal Console
                 </p>
-                <p className="mt-2 text-xl font-semibold text-white">
+                <p className="mt-2 font-heading text-xl font-semibold text-white">
                   Product + model thinking
                 </p>
               </div>

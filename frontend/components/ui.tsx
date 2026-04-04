@@ -14,7 +14,7 @@ export function SectionIntro({
 }) {
   return (
     <div className="max-w-3xl">
-      <p className="text-sm font-medium uppercase tracking-[0.35em] text-cyan-300/80">
+      <p className="font-mono text-sm font-medium uppercase tracking-[0.35em] text-cyan-300/80">
         {eyebrow}
       </p>
       <h2 className="section-heading">{title}</h2>
@@ -25,7 +25,7 @@ export function SectionIntro({
 
 export function Pill({ children }: { children: ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-cyan-200">
+    <span className="inline-flex items-center rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 font-mono text-xs font-medium uppercase tracking-[0.25em] text-cyan-200">
       {children}
     </span>
   );

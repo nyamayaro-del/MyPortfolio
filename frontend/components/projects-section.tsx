@@ -19,10 +19,10 @@ export function ProjectsSection() {
           >
             <div className="flex flex-col justify-between gap-4">
               <div>
-                <p className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">
+                <p className="font-mono text-sm uppercase tracking-[0.28em] text-cyan-300/80">
                   {project.category}
                 </p>
-                <h3 className="mt-3 text-2xl font-semibold text-white">{project.title}</h3>
+                <h3 className="mt-3 font-heading text-2xl font-semibold text-white">{project.title}</h3>
               </div>
               <div className="flex gap-3">
                 <a
@@ -50,22 +50,22 @@ export function ProjectsSection() {
 
             <div className="grid gap-5 md:grid-cols-2">
               <div className="rounded-2xl border border-white/10 bg-slate-950/30 p-5">
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Problem</p>
+                <p className="font-mono text-sm uppercase tracking-[0.24em] text-slate-400">Problem</p>
                 <p className="mt-3 text-sm leading-7 text-slate-200">{project.problem}</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-slate-950/30 p-5">
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Solution</p>
+                <p className="font-mono text-sm uppercase tracking-[0.24em] text-slate-400">Solution</p>
                 <p className="mt-3 text-sm leading-7 text-slate-200">{project.solution}</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-slate-950/30 p-5">
-                <p className="text-sm uppercase tracking-[0.24em] text-slate-400">
+                <p className="font-mono text-sm uppercase tracking-[0.24em] text-slate-400">
                   Technologies
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.22em] text-slate-200"
+                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-xs uppercase tracking-[0.22em] text-slate-200"
                     >
                       {tech}
                     </span>
@@ -73,7 +73,7 @@ export function ProjectsSection() {
                 </div>
               </div>
               <div className="rounded-2xl border border-cyan-400/15 bg-cyan-400/10 p-5">
-                <p className="text-sm uppercase tracking-[0.24em] text-cyan-200/80">Results</p>
+                <p className="font-mono text-sm uppercase tracking-[0.24em] text-cyan-200/80">Results</p>
                 <p className="mt-3 text-sm leading-7 text-cyan-50">{project.impact}</p>
               </div>
             </div>

@@ -56,7 +56,10 @@ export function ContactSection() {
               </div>
               <div>
                 <p className="text-sm text-slate-400">Primary email</p>
-                <a href={`mailto:${personalInfo.email}`} className="text-lg font-semibold text-white">
+                <a
+                  href={`mailto:${personalInfo.email}`}
+                  className="font-heading text-lg font-semibold text-white"
+                >
                   {personalInfo.email}
                 </a>
               </div>

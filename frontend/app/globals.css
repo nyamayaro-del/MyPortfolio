@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  @apply bg-background text-slate-100 antialiased;
+  @apply bg-background font-sans text-slate-100 antialiased;
   background-image:
     radial-gradient(circle at top, rgba(59, 130, 246, 0.18), transparent 28%),
     radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.16), transparent 22%),
@@ -37,7 +37,7 @@ body {
 }
 
 .section-heading {
-  @apply text-3xl font-semibold tracking-tight text-white sm:text-4xl;
+  @apply font-heading text-3xl font-semibold tracking-tight text-white sm:text-4xl;
 }
 
 .section-copy {

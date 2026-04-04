@@ -18,7 +18,7 @@ export function AboutSection() {
                 key={highlight.title}
                 className="rounded-2xl border border-white/10 bg-slate-950/30 p-5"
               >
-                <h3 className="text-lg font-semibold text-white">{highlight.title}</h3>
+                <h3 className="font-heading text-lg font-semibold text-white">{highlight.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-300">
                   {highlight.description}
                 </p>
@@ -28,7 +28,7 @@ export function AboutSection() {
         </div>
 
         <div className="glass-panel neon-ring p-8">
-          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300/80">
+          <p className="font-mono text-sm uppercase tracking-[0.3em] text-cyan-300/80">
             Core Stack
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">

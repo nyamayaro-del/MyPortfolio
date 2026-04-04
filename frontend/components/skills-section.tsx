@@ -17,14 +17,14 @@ export function SkillsSection() {
               <div className="rounded-2xl bg-cyan-400/10 p-3 text-cyan-300">
                 <Icon className="h-5 w-5" />
               </div>
-              <h3 className="text-xl font-semibold text-white">{title}</h3>
+              <h3 className="font-heading text-xl font-semibold text-white">{title}</h3>
             </div>
             <div className="mt-8 space-y-5">
               {skills.map((skill) => (
                 <div key={skill.name}>
                   <div className="mb-2 flex items-center justify-between text-sm">
                     <span className="text-slate-200">{skill.name}</span>
-                    <span className="text-cyan-200">{skill.level}%</span>
+                    <span className="font-mono text-cyan-200">{skill.level}%</span>
                   </div>
                   <div className="h-2 rounded-full bg-white/5">
                     <div

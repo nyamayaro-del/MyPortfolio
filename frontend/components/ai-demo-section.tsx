@@ -61,14 +61,14 @@ export function AIDemoSection() {
       <div className="mt-12 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
         <form onSubmit={handleSubmit} className="glass-panel neon-ring space-y-5 p-8">
           <label className="block">
-            <span className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">
+            <span className="font-mono text-sm uppercase tracking-[0.28em] text-cyan-300/80">
               Input text
             </span>
             <textarea
               value={text}
               onChange={(event) => setText(event.target.value)}
               rows={7}
-              className="mt-4 w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-4 text-sm text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-cyan-300/40"
+              className="mt-4 w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-4 font-mono text-sm text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-cyan-300/40"
               placeholder="Describe an AI, web, or mobile project..."
             />
           </label>
@@ -100,29 +100,29 @@ export function AIDemoSection() {
         </form>
 
         <div className="glass-panel neon-ring p-8">
-          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300/80">
+          <p className="font-mono text-sm uppercase tracking-[0.3em] text-cyan-300/80">
             Prediction output
           </p>
           {result ? (
             <div className="mt-6 space-y-4">
               <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 p-5">
                 <p className="text-sm text-cyan-100/80">Predicted label</p>
-                <p className="mt-2 text-2xl font-semibold text-white">{result.label}</p>
+                <p className="mt-2 font-heading text-2xl font-semibold text-white">{result.label}</p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-5">
-                <p className="text-sm text-slate-400">Confidence</p>
+                <p className="font-mono text-sm text-slate-400">Confidence</p>
                 <div className="mt-3 h-3 rounded-full bg-white/5">
                   <div
                     className="h-3 rounded-full bg-gradient-to-r from-sky-400 to-violet-500"
                     style={{ width: `${Math.round(result.confidence * 100)}%` }}
                   />
                 </div>
-                <p className="mt-3 text-sm text-slate-200">
+                <p className="mt-3 font-mono text-sm text-slate-200">
                   {Math.round(result.confidence * 100)}%
                 </p>
               </div>
               <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-5">
-                <p className="text-sm text-slate-400">Reasoning</p>
+                <p className="font-mono text-sm text-slate-400">Reasoning</p>
                 <p className="mt-3 text-sm leading-7 text-slate-200">{result.reasoning}</p>
               </div>
             </div>
